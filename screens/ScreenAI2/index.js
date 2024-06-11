@@ -15,7 +15,7 @@ const LoginScreen = () => {
           <TextInput style={styles.input} placeholder="Email" value="email address" onChangeText={setEmail} keyboardType="email-address" autoCapitalize="none" />
           <TextInput style={styles.input} placeholder="Password" value={password} onChangeText={setPassword} secureTextEntry />
           <TouchableOpacity style={styles.button}>
-            <Text style={styles.buttonText}>Login</Text>
+            <Text style={styles.buttonText}>{"Login Now"}</Text>
           </TouchableOpacity>
         </View>
       </KeyboardAvoidingView>
@@ -35,10 +35,7 @@ const styles = StyleSheet.create({
   logoContainer: {
     marginBottom: 60
   },
-  logo: {
-    width: 120,
-    height: 120
-  },
+  logo: {},
   inputContainer: {
     width: "80%"
   },
